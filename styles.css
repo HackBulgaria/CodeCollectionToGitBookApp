@@ -20,7 +20,7 @@ header {
 .main-content {
 	padding: 20px 10px;
 	text-align: center;
-	background-color: #E36;
+	background-color: #E36;/*#4389f9;*/
 }
 
 .search {
@@ -54,7 +54,7 @@ header {
 .border-left-round5 {
 	border-top-left-radius: 5px;
 	-webkit-border-top-left-radius: 5px;
-  	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topleft: 5px;
 
 	border-bottom-left-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
@@ -133,6 +133,53 @@ header {
 	clear: right;
 }
 
+.export-header {
+	height: 40px;
+	color: #fff;
+	font-size: 23px;
+	margin-top: 10px;
+}
+
+.exported-items-container {
+	min-width: 50px;
+	min-height: 50px;
+	background-color: #fff;
+	padding:5px;
+}
+
 ul {
 	list-style-type: none;
+}
+
+.exported-item {
+	display:inline;
+}
+.exported-item .tag{
+	background-color: #eee;
+}
+
+.exported-item *{
+	display: inline;
+}
+
+.exported-item .item-name {
+
+}
+
+.remove-exported-item-button {
+	border: none;
+	height: 15px;
+	font-size: 13px;
+	width: 15px;
+}
+
+.export-to-gitbook-button {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	height: 35px;
+	border: none;
+	background-color: #eee;
+	font-size: 24px;
+	color: #444;
 }
