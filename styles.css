@@ -91,11 +91,15 @@ header {
 	float: left;
 	margin-left: 10px;
 	margin-top: 5p1x;
-	background-image: url("images/unchecked_checkbox.png");
 	background-size: 30px 30px;
 	background-repeat: no-repeat;
 	min-width: 30px;
 	min-height: 30px;
+	background-image: url("images/unchecked_checkbox.png");
+}
+
+.checkbox-checked {
+	background-image: url("images/checked_checkbox.png");
 }
 
 .match-name {
