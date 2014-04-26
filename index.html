@@ -11,16 +11,21 @@
 
 </head>
 <body>
+	<div class="overlay hidden">
+		<div class="overlay-background">
+		</div>
+		<div class="overlay-match-information border-round5">
+			<div class="match-name">Lorem Ipsum</div>
+			<div class="match-description border-round3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+			<button class="close-match-desc border-round3">Close</button>
+		</div>
+	</div>
 	<div class="container">
 		<div class="blog-header">
-				<h1 class="blog-title">The CodeBook</h1>
+				<h1 class="blog-title header">The CodeBook</h1>
 				<p class="lead blog-description">The official Coding Exercises generator</p>
 			</div>
-		<div class="row">
-			<div class="overlay-match-information">
-				<div class="match-name"></div>
-				<div class="match-description"></div>
-			</div>
+		<div class="row ">
 			<div class="col-sm-8 blog-main main-content border-round5">
 				<div class="search">
 					<input type="text" class="search-field border-left-round5"/>
@@ -28,21 +33,21 @@
 				</div>
 				<div class="search-matches-container border-round5">
 					<ul class="matches">
-						<li class="matched-item">
+						<li id="fooId" class="matched-item">
 							<div class="add-checkbox"></div>
 							<p class="match-name">
 								First matched exercise
 							</p>
 							<button class="open-decription border-round5">open</button>
 						</li>
-						<li class="matched-item">
+						<li id="fooId" class="matched-item">
 							<div class="add-checkbox"></div>
 							<p class="match-name">
 								First matched exercise
 							</p>
 							<button class="open-decription border-round5">open</button>
 						</li>
-						<li class="matched-item">
+						<li id="fooId" class="matched-item">
 							<div class="add-checkbox"></div>
 							<p class="match-name">
 								First matched exercise
@@ -53,7 +58,7 @@
 					</ul>
 				</div>
 			</div>
-			<aside class="col-sm-4 blog-sidebarside-bar-controls side-bar-controls border-round5">
+			<aside class="col-sm-3 blog-sidebarside-bar-controls side-bar-controls border-round5">
 				<div class="right-export-container">
 					<div class="export-header">
 						TO EXPORT
