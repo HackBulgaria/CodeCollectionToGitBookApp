@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	margin-bottom: 50px;
+}
+
+.wrapper { 
+	width: 800px;
+	margin-left: 20%;
+	height: 800px;
+	background-color: #eee;
+	text-align: center;
+}
+
+/***************************************/
+/*MAIN CONTAINER STYLES*/
+.main-content {
+	padding: 20px 10px;
+	text-align: center;
+	background-color: #E36;
+}
+
+.search {
+	margin-bottom: 20px;
+	width:100%;
+}
+
+.search-field {
+	width: 86%;
+	float: left;
+	height: 30px;
+}
+
+.search-button {
+	width: 14%;
+	height: 30px;
+	background-color: #666;
+	border: none;
+	color: white;
+	font-size: 20px;
+}
+
+.border-round5 {
+	border-radius: 5px;
+}
+
+.border-round3 {
+	border-radius: 3px;
+}
+
+.border-left-round5 {
+	border-top-left-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+  	-moz-border-radius-topleft: 5px;
+
+	border-bottom-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+
+}
+
+.border-right-round5 {
+	border-top-right-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+
+	border-bottom-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+}
+
+.search-matches-container {
+	background-color: #fff;
+	width: 100%;
+}
+	
+.matched-item {
+	padding: 5px;
+	vertical-align: middle;
+	border-bottom: 1px solid #ccc;
+}
+
+.matched-item:last-child {
+	border-bottom: 0px solid #aaa;
+}
+
+.add-checkbox {
+	float: left;
+	margin-left: 10px;
+	margin-top: 5p1x;
+	background-image: url("images/unchecked_checkbox.png");
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	min-width: 30px;
+	min-height: 30px;
+}
+
+.match-name {
+	font-size: 25px;
+	margin-bottom: 0px;
+}
+
+.open-decription {
+	float: right;
+	margin-right: 10px;
+	margin-top: 4px;
+	width: 100px;
+	height: 30px;
+	border: none;
+	font-size: 20px;
+}
+
+.matched-item * {
+	display: inline-block;
+}
+
+
+/***************************************/
+/*RIGHT SIDEBAR CONTROL STYLES*/
+.side-bar-controls {
+	/*float: right;
+	height: 100%;
+	width: 250px;*/
+	background-color: #666;
+	/*margin-right: 18px;*/
+}
+
+.side-bar-controls:after {
+	content: '';
+	clear: right;
+}
+
+ul {
+	list-style-type: none;
+}

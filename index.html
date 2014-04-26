@@ -3,41 +3,62 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
 </head>
 <body>
-	<div class="wrapper">
-		<header>
-			<h1>CodeBook</h1>
-		</header>
-		<article class="container">
+	<div class="container">
+		<div class="blog-header">
+				<h1 class="blog-title">The CodeBook</h1>
+				<p class="lead blog-description">The official Coding Exercises generator</p>
+			</div>
+		<div class="row">
 			<div class="overlay-match-information">
 				<div class="match-name"></div>
 				<div class="match-description"></div>
 			</div>
-			<div class="main-content">
+			<div class="col-sm-8 blog-main main-content border-round5">
 				<div class="search">
-					<input type="text" class="search-field"/>
-					<input type="button" class="search-button" value="search"/>
+					<input type="text" class="search-field border-left-round5"/>
+					<input type="button" class="search-button border-right-round5" value="search"/>
 				</div>
-				<div class="search-matches-container">
+				<div class="search-matches-container border-round5">
 					<ul class="matches">
 						<li class="matched-item">
-							<input type="checkbox" class="add-checkbox"/>
+							<div class="add-checkbox"></div>
 							<p class="match-name">
 								First matched exercise
 							</p>
-							<button class="open-decription">open</button>
+							<button class="open-decription border-round5">open</button>
+						</li>
+						<li class="matched-item">
+							<div class="add-checkbox"></div>
+							<p class="match-name">
+								First matched exercise
+							</p>
+							<button class="open-decription border-round5">open</button>
+						</li>
+						<li class="matched-item">
+							<div class="add-checkbox"></div>
+							<p class="match-name">
+								First matched exercise
+							</p>
+							<button class="open-decription border-round5">open</button>
 						</li>
 						<!-- fill mached items -->
 					</ul>
 				</div>
 			</div>
-			<aside class="side-bar-controls">
+			<aside class="col-sm-3 col-sm-offset-1 blog-sidebarside-bar-controls side-bar-controls border-round5">
 				<div class="right-export-container">
 					<div class="export-header">
 						TO EXPORT
-					</div>
 					<div class="exported-items-container">
+					</div>
 						<ul class="exported-items">
 							<li class="exported-item">
 								<p class="item-name"></p>
@@ -52,10 +73,14 @@
 					Export to git book
 				</button>
 			</aside>
-		</article>
-		<footer>
+		</div>
+		<footer class="blog-footer">
 			
 		</footer>
+
+		<!-- Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	</div>
 </body>
 </html>
