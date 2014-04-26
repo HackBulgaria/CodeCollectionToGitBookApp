@@ -1,1 +1,4 @@
 # remove from bootstrap linking "https:" before uploading it on the net
+# add media queries for the suggested exercise fields or use bootstrap
+# add overflow:hidden to name of suggested exercises
+# write additional css for drop-down/hits for search field

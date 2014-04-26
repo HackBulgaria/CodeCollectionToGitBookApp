@@ -701,21 +701,21 @@
             boxShadow: "none"
         },
         input: {
-            position: "relative",
-            verticalAlign: "top",
-            backgroundColor: "transparent"
+            // position: "relative",
+            // verticalAlign: "top",
+            // backgroundColor: "transparent"
         },
         inputWithNoHint: {
             position: "relative",
             verticalAlign: "top"
         },
-        dropdown: {
-            position: "absolute",
-            top: "100%",
-            left: "0",
-            zIndex: "100",
-            display: "none"
-        },
+        // dropdown: {
+        //     position: "absolute",
+        //     top: "100%",
+        //     left: "0",
+        //     zIndex: "100",
+        //     display: "none"
+        // },
         suggestions: {
             display: "block"
         },
