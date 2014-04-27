@@ -1,0 +1,21 @@
+{
+  "name": "CodeCollectionToGitBookApp",
+  "version": "0.0.0",
+  "homepage": "https://github.com/HackBulgaria/CodeCollectionToGitBookApp",
+  "authors": [
+    "Hack Bulgaria"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "typeahead.js": "~0.10.2",
+    "underscore": "~1.6.0"
+  }
+}

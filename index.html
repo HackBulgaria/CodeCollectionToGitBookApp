@@ -8,7 +8,6 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-
 </head>
 <body>
 	<div class="overlay hidden">
@@ -16,7 +15,7 @@
 		</div>
 		<div class="overlay-match-information border-round5">
 			<div class="match-name">Lorem Ipsum</div>
-			<div class="match-description border-round3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+			<pre class="match-description border-round3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</pre>
 			<button class="close-match-desc border-round3">Close</button>
 		</div>
 	</div>
@@ -27,13 +26,15 @@
 			</div>
 		<div class="row ">
 			<div class="col-sm-8 blog-main main-content border-round5">
+
 				<div class="search">
-					<input type="text" class="search-field border-left-round5 typeahead" placeholder="type in tags..."/>
-					<input type="button" class="search-button border-right-round5" value="search"/>
+					<input type="text" class="autocomplete typeahead" placeholder="type in tags..."/>
+					<div class="selected-tags">
+					</div>
 				</div>
 				<div class="search-matches-container border-round5">
 					<ul class="matches">
-						<li id="fooId1" class="matched-item">
+						<!-- <li id="fooId1" class="matched-item">
 							<div class="add-checkbox"></div>
 							<p class="match-name">
 								First matched exercise123123
@@ -53,7 +54,7 @@
 								First matched exercise1
 							</p>
 							<button class="open-decription border-round5">desc</button>
-						</li>
+						</li> -->
 						<!-- fill mached items -->
 					</ul>
 				</div>
@@ -79,6 +80,8 @@
 				<button class="export-to-gitbook-button border-round5">
 					Export to git book
 				</button>
+				<div id="download-container">
+				</div>
 			</aside>
 		</div>
 		<footer class="blog-footer">
@@ -87,11 +90,25 @@
 		<!-- Libraries -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/typeahead.js"></script>
+		<script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+		<script type="text/javascript" src="bower_components/typeahead.js/dist/typeahead.jquery.js"></script>
 
 		<!-- Scripts -->
 		<script type="text/javascript" src="js/markupgenerator.js"></script>
+		<script type="text/javascript" src="js/api.js"></script>
 		<script type="text/javascript" src="js/ui.js"></script>
 	</div>
+
+	<script id="problemItem" type="text/template">
+		<li id="<%= id %>" class="matched-item">
+			<div class="add-checkbox"></div>
+			<p class="match-name">
+				<%= problemName %>
+			</p>
+			<button class="open-decription border-round5">See it!</button>
+			<input type="hidden" class="problem-description" value="<%-	 problemDescription %>" />
+		</li>
+	</script>
+
 </body>
 </html>
