@@ -1,5 +1,6 @@
 (function ($) {
-	var $overlay = $('.overlay');
+	var $overlay = $('.overlay'),
+		allTagCollection = null;
 
 	$('.add-checkbox').on('click',function(e) {
 		var $checktedCheckBox = $(this),
@@ -13,11 +14,14 @@
 			$container = $('.exported-items');
 
 		if($existinsMatchedItemExercseTag.length > 0) { //tag already exists
-			var contents = $('.exported-items').html(),
-				newStringContents = contents.replace( selectedExcerciseTag + ',', '')
-											.replace(','+ selectedExcerciseTag + ',' , '')
-											.replace(','+ selectedExcerciseTag, '')
-											.replace(selectedExcerciseTag, '');
+			var contents = $('.exported-items').html();
+
+			if(contents !== undefined) {
+				var newStringContents = contents.replace( selectedExcerciseTag + ',', '')
+												.replace(','+ selectedExcerciseTag + ',' , '')
+												.replace(','+ selectedExcerciseTag, '')
+												.replace(selectedExcerciseTag, '');
+				}
 			$container.empty();
 			$container.append(newStringContents);
 		}
@@ -31,6 +35,19 @@
 			}
 		}
 	});
+
+	//load all exercise tasks
+	$('.matches').on('live', function(e) {
+		$.ajax({
+			type: "GET",
+			url: "http://146.185.169.9:3000/tasks?callback=?",
+			dataType: 'jsonp',
+			success: function(data){
+				console.log(data);
+			}
+			// data: { name: "John", location: "Boston" }
+		});
+	})
 
 	$('.close-match-desc').on('click', function(e){
 		$overlay.addClass('hidden');
@@ -47,6 +64,8 @@
 	$('.export-to-gitbook-button').on('click', function(e){
 		//do exporting shit here
 	});
+
+	
 
 	////////////////////////////////////
 	/////	Typeahead UI init	 	////
